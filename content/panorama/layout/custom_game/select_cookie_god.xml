@@ -1,0 +1,44 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/select_cookie_god.css" />
+	</styles>
+    <scripts>
+		<include src="file://{resources}/scripts/custom_game/select_cookie_god.js" />
+	</scripts>
+    <!-- conditional rendering
+    make snippets for points selection and hero selection
+    make flag for each
+    initially display points selection
+    when "select" is clicked, hide points selection and show hero selection -->
+
+    <snippets>
+        <snippet name="CookieGodSnippet">
+            <Panel class="CookieGodMainPanel" hittest="false">
+                <Panel id="CookieGodSelectRoot" class="CookieGodSelectRoot" hittest="true">
+                    <Label id="CookieGodSelectLabel" text="#cookie_hero_select" style="" />
+                    <Label id="CookieGodName" text="filler" style="" />
+                    <Panel class="CookieGodPanel">
+                        <Image id="CookieGodImage0" class="CookieGodImage" src="file://{resources}/images/custom_game/cookie_gods/axe_cookie.PNG" onactivate="OnHighlightCookieGod(0)" onmouseover="OnCookieGodMouseOver(0)" onmouseout="OnCookieGodMouseOut(0)"/>
+                        <Image id="CookieGodImage1" class="CookieGodImage" src="file://{resources}/images/custom_game/cookie_gods/bristleback_cookie.PNG" onactivate="OnHighlightCookieGod(1)" onmouseover="OnCookieGodMouseOver(1)" onmouseout="OnCookieGodMouseOut(1)"/>
+                        <Image id="CookieGodImage2" class="CookieGodImage" src="file://{resources}/images/custom_game/cookie_gods/cm_cookie.PNG" onactivate="OnHighlightCookieGod(2)" onmouseover="OnCookieGodMouseOver(2)" onmouseout="OnCookieGodMouseOut(2)"/>
+                        <Image id="CookieGodImage3" class="CookieGodImage" src="file://{resources}/images/custom_game/cookie_gods/invoker_cookie.PNG" onactivate="OnHighlightCookieGod(3)" onmouseover="OnCookieGodMouseOver(3)" onmouseout="OnCookieGodMouseOut(3)"/>
+                        <Image id="CookieGodImage4" class="CookieGodImage" src="file://{resources}/images/custom_game/cookie_gods/ogre_cookie.PNG" onactivate="OnHighlightCookieGod(4)" onmouseover="OnCookieGodMouseOver(4)" onmouseout="OnCookieGodMouseOut(4)"/>
+                        <Image id="CookieGodImage5" class="CookieGodImage" src="file://{resources}/images/custom_game/cookie_gods/jugg_cookie.PNG" onactivate="OnHighlightCookieGod(5)" onmouseover="OnCookieGodMouseOver(5)" onmouseout="OnCookieGodMouseOut(5)"/>
+                        <Image id="CookieGodImage6" class="CookieGodImage" src="file://{resources}/images/custom_game/cookie_gods/lina_cookie.PNG" onactivate="OnHighlightCookieGod(6)" onmouseover="OnCookieGodMouseOver(6)" onmouseout="OnCookieGodMouseOut(6)"/>
+                        <Image id="CookieGodImage7" class="CookieGodImage" src="file://{resources}/images/custom_game/cookie_gods/mortimer_cookie.PNG" onactivate="OnHighlightCookieGod(7)" onmouseover="OnCookieGodMouseOver(7)" onmouseout="OnCookieGodMouseOut(7)"/>
+                    </Panel>
+                    <Panel id="CookieGodSelectPanel" class="CookieGodSelectPanel">
+                        <Button class="SelectCookieGodButton" onactivate="OnSelectCookieGod()"><Label text="#cookie_god_select_button"></Label></Button>
+                    </Panel>
+                </Panel>
+            </Panel>
+        </snippet>
+    </snippets>
+
+    <Panel class="SelectionRoot">
+        <Panel id="SelectionPanel">
+        </Panel>
+        <Panel id="AbilityPanel">
+        </Panel>
+    </Panel>
+</root>

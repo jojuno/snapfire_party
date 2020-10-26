@@ -1,0 +1,20 @@
+"addon"
+{
+	"Unassigned"      								"Unassigned Team"
+	"Spectator"       								"Spectator Team"
+	"Neutrals"        								"Neutral Team"
+	"NoTeam"          								"No Team"
+
+	"DOTA_GoodGuys"   								"?"
+	"DOTA_BadGuys"    								"!"
+	"DOTA_Custom1"    								"Blue Team"
+	"DOTA_Custom2"    								"Red Team"
+	"DOTA_Custom3"    								"Pink Team"
+	"DOTA_Custom4"    								"Green Team"
+	"DOTA_Custom5"    								"Brown Team"
+	"DOTA_Custom6"    								"Cyan Team"
+	"DOTA_Custom7"    								"Olive Team"
+	"DOTA_Custom8"    								"Purple Team"
+	
+	"addonname"										"Snapfire Wars"
+}

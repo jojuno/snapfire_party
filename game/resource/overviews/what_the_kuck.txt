@@ -1,0 +1,8 @@
+what_the_kuck
+{
+	material materials/overviews/what_the_kuck.vmat
+	pos_x -8111
+	pos_y 8142
+	scale 15.894
+}
+

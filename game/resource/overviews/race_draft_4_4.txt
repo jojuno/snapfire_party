@@ -1,0 +1,8 @@
+race_draft_4_4
+{
+	material materials/overviews/race_draft_4_4.vmat
+	pos_x -8176
+	pos_y 8192
+	scale 16.000
+}
+

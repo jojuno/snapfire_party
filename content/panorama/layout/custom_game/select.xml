@@ -1,0 +1,118 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/select.css" />
+	</styles>
+    <scripts>
+		<include src="file://{resources}/scripts/custom_game/select.js" />
+	</scripts>
+    <!-- conditional rendering
+    make snippets for points selection and hero selection
+    make flag for each
+    initially display points selection
+    when "select" is clicked, hide points selection and show hero selection -->
+
+    <snippets>
+        <snippet name="PointsSnippet">
+            <Panel class="PointsMainPanel" hittest="false">
+                <Panel id="PointsSelectRoot" class="PointsSelectRoot" hittest="true">
+                    <Label id="PointsSelectLabel" text="#points_select" style="" />
+                    <Label id="PointsName" style="" />
+                    <Panel id="PointsPanel" class="PointsPanel">
+                        <Panel id="PointsPanel0" class="PointsPseudoImage" onactivate="OnHighlightPoints(0)" onmouseover="OnPointsMouseOver(0)" onmouseout="OnPointsMouseOut(0)">
+                            <Label class="PointsLabel" id="PointsLabel1" text="Short"/>
+                        </Panel>
+                        <Panel id="PointsPanel1" class="PointsPseudoImage" onactivate="OnHighlightPoints(1)" onmouseover="OnPointsMouseOver(1)" onmouseout="OnPointsMouseOut(1)">
+                            <Label class="PointsLabel" id="PointsLabel2"  text="Medium"/>
+                        </Panel>
+                        <Panel id="PointsPanel2" class="PointsPseudoImage" onactivate="OnHighlightPoints(2)" onmouseover="OnPointsMouseOver(2)" onmouseout="OnPointsMouseOut(2)">
+                            <Label class="PointsLabel" id="PointsLabel3"  text="Long"/>
+                        </Panel>
+                    </Panel>
+                    <Panel id="PointsSelectPanel" class="PointsSelectPanel" >
+                        <Button class="SelectPointsButton" onactivate="OnSelectPoints()"><Label text="#points_select_button"></Label></Button>
+                    </Panel>
+                </Panel>
+            </Panel>
+        </snippet>
+        <snippet name="HeroSnippet">
+            <Panel class="HeroMainPanel" hittest="false">
+                <Panel id="HeroSelectRoot" class="HeroSelectRoot" hittest="true">
+                    <Label id="HeroSelectLabel" text="#hero_select" style="" />
+                    <Label id="HeroName" style="" />
+                    <Panel class="HeroPanel">
+                        <!-- <DOTAHeroImage id="HeroImage0" class="HeroImage" heroname="npc_dota_hero_chen" heroimagestyle="portrait" onactivate="OnHighlightHero(0)" onmouseover="OnHeroMouseOver(0)" onmouseout="OnHeroMouseOut(0)"/>
+                         -->
+                        <DOTAHeroImage id="HeroImage6" class="HeroImage" heroname="npc_dota_hero_abaddon" heroimagestyle="portrait" onactivate="OnHighlightHero(6)" onmouseover="OnHeroMouseOver(6)" onmouseout="OnHeroMouseOut(6)"/>
+                        <DOTAHeroImage id="HeroImage0" class="HeroImage" heroname="npc_dota_hero_chen" heroimagestyle="portrait" onactivate="OnHighlightHero(0)" onmouseover="OnHeroMouseOver(0)" onmouseout="OnHeroMouseOut(0)"/>
+                        <DOTAHeroImage id="HeroImage1" class="HeroImage" heroname="npc_dota_hero_mirana" heroimagestyle="portrait" onactivate="OnHighlightHero(1)" onmouseover="OnHeroMouseOver(1)" onmouseout="OnHeroMouseOut(1)"/>
+                        <DOTAHeroImage id="HeroImage2" class="HeroImage" heroname="npc_dota_hero_batrider" heroimagestyle="portrait" onactivate="OnHighlightHero(2)" onmouseover="OnHeroMouseOver(2)" onmouseout="OnHeroMouseOut(2)"/>
+                        <DOTAHeroImage id="HeroImage3" class="HeroImage" heroname="npc_dota_hero_gyrocopter" heroimagestyle="portrait" onactivate="OnHighlightHero(3)" onmouseover="OnHeroMouseOver(3)" onmouseout="OnHeroMouseOut(3)"/>
+                        <DOTAHeroImage id="HeroImage4" class="HeroImage" heroname="npc_dota_hero_luna" heroimagestyle="portrait" onactivate="OnHighlightHero(4)" onmouseover="OnHeroMouseOver(4)" onmouseout="OnHeroMouseOut(4)"/>
+                        <DOTAHeroImage id="HeroImage5" class="HeroImage" heroname="npc_dota_hero_disruptor" heroimagestyle="portrait" onactivate="OnHighlightHero(5)" onmouseover="OnHeroMouseOver(5)" onmouseout="OnHeroMouseOut(5)"/>
+                        <DOTAHeroImage id="HeroImage7" class="HeroImage" heroname="npc_dota_hero_snapfire" heroimagestyle="portrait" onactivate="OnHighlightHero(7)" onmouseover="OnHeroMouseOver(7)" onmouseout="OnHeroMouseOut(7)"/>
+                    </Panel>
+                    <Panel id="HeroSelectPanel" class="HeroSelectPanel">
+                        <Button class="SelectHeroButton" onactivate="OnSelectHero()"><Label text="#hero_select_button"></Label></Button>
+                    </Panel>
+                </Panel>
+            </Panel>
+        </snippet>
+        <snippet name="WhatTheKuckHeroSnippet">
+            <Panel class="HeroMainPanel" hittest="false">
+                <Panel id="HeroSelectRoot" class="HeroSelectRoot" hittest="true">
+                    <Label id="HeroSelectLabel" text="#hero_select" style="" />
+                    <Label id="HeroName" style="" />
+                    <Panel class="HeroPanel">
+                        <!-- <DOTAHeroImage id="HeroImage0" class="HeroImage" heroname="npc_dota_hero_chen" heroimagestyle="portrait" onactivate="OnHighlightHero(0)" onmouseover="OnHeroMouseOver(0)" onmouseout="OnHeroMouseOut(0)"/>
+                         -->
+                        <DOTAHeroImage id="HeroImage6" class="HeroImage" heroname="npc_dota_hero_abaddon" heroimagestyle="portrait" onactivate="OnHighlightHero(6)" onmouseover="OnHeroMouseOver(6)" onmouseout="OnHeroMouseOut(6)"/>
+                        <DOTAHeroImage id="HeroImage0" class="HeroImage" heroname="npc_dota_hero_chen" heroimagestyle="portrait" onactivate="OnHighlightHero(0)" onmouseover="OnHeroMouseOver(0)" onmouseout="OnHeroMouseOut(0)"/>
+                        <DOTAHeroImage id="HeroImage1" class="HeroImage" heroname="npc_dota_hero_mirana" heroimagestyle="portrait" onactivate="OnHighlightHero(1)" onmouseover="OnHeroMouseOver(1)" onmouseout="OnHeroMouseOut(1)"/>
+                        <DOTAHeroImage id="HeroImage2" class="HeroImage" heroname="npc_dota_hero_batrider" heroimagestyle="portrait" onactivate="OnHighlightHero(2)" onmouseover="OnHeroMouseOver(2)" onmouseout="OnHeroMouseOut(2)"/>
+                        <DOTAHeroImage id="HeroImage3" class="HeroImage" heroname="npc_dota_hero_gyrocopter" heroimagestyle="portrait" onactivate="OnHighlightHero(3)" onmouseover="OnHeroMouseOver(3)" onmouseout="OnHeroMouseOut(3)"/>
+                        <DOTAHeroImage id="HeroImage4" class="HeroImage" heroname="npc_dota_hero_luna" heroimagestyle="portrait" onactivate="OnHighlightHero(4)" onmouseover="OnHeroMouseOver(4)" onmouseout="OnHeroMouseOut(4)"/>
+                        <DOTAHeroImage id="HeroImage5" class="HeroImage" heroname="npc_dota_hero_disruptor" heroimagestyle="portrait" onactivate="OnHighlightHero(5)" onmouseover="OnHeroMouseOver(5)" onmouseout="OnHeroMouseOut(5)"/>
+                        <DOTAHeroImage id="HeroImage7" class="HeroImage" heroname="npc_dota_hero_snapfire" heroimagestyle="portrait" onactivate="OnHighlightHero(7)" onmouseover="OnHeroMouseOver(7)" onmouseout="OnHeroMouseOut(7)"/>
+                    </Panel>
+                    <Panel id = "AbilitiesPanel" class="AbilitiesPanel">
+
+                    </Panel>
+                    <Panel id="HeroSelectPanel" class="HeroSelectPanel">
+                        <Button class="SelectHeroButton" onactivate="OnSelectHero()"><Label text="#hero_select_button"></Label></Button>
+                    </Panel>
+                </Panel>
+            </Panel>
+        </snippet>
+        <snippet name="TypeSnippet">
+            <Panel class="TypeMainPanel" hittest="false">
+                <Panel id="TypeSelectRoot" class="TypeSelectRoot" hittest="true">
+                    <Label id="TypeSelectLabel" text="#type_select" style="" />
+                    <Label id="TypeName" style="" />
+                    <Panel id="TypePanel" class="TypePanel">
+                        <Panel id="TypePanel0" class="TypePseudoImage" onactivate="OnHighlightType(0)" onmouseover="OnTypeMouseOver(0)" onmouseout="OnTypeMouseOut(0)">
+                            <Label class="TypeLabel" text="Battle&#10;Royal"/>
+                        </Panel>
+                        <Panel id="TypePanel1" class="TypePseudoImage" onactivate="OnHighlightType(1)" onmouseover="OnTypeMouseOver(1)" onmouseout="OnTypeMouseOut(1)">
+                            <Label class="TypeLabel" text="Death&#10;Match"/>
+                        </Panel>
+                    </Panel>
+                    <Panel id="TypeSelectPanel" class="TypeSelectPanel" >
+                        <Button class="SelectTypeButton" onactivate="OnSelectType()"><Label text="#Type_select_button"></Label></Button>
+                    </Panel>
+                </Panel>
+            </Panel>
+        </snippet>
+        <snippet name="Ability">
+            <Panel class="AbilitiesMainPanel">
+                <DOTAHeroImage id="HeroImage0" class="HeroImage" heroname="npc_dota_hero_warlock" heroimagestyle="portrait" onactivate="OnHighlightHero(0)" onmouseover="OnHeroMouseOver(0)" onmouseout="OnHeroMouseOut(0)"/>
+            </Panel>
+        </snippet>
+    </snippets>
+
+    <Panel class="SelectionRoot">
+        <Panel id="SelectionPanel">
+        </Panel>
+        <Panel id="AbilityPanel">
+        </Panel>
+    </Panel>
+</root>

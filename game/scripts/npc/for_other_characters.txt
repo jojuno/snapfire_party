@@ -1,0 +1,71 @@
+		//regular heroes
+		"Ability1"				"snapfire_scatterblast"
+		"Ability2"				"snapfire_firesnap_cookie"
+		"Ability3"				"snapfire_lil_shredder"
+		"Ability4"				"snapfire_gobble_up"
+		"Ability5"				"snapfire_spit_creep"
+		"Ability6"				"snapfire_mortimer_kisses"
+		"Ability7"				"fiery_soul_on_kill_lua"
+		
+		"ArmorPhysical"				"0"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"  "100"
+		"AttackDamageMax"  "200"
+		"AttackRange" "500"
+		"AttackRate"				"1.300000"
+		"AttackAnimationPoint"		"0.350000"
+		"AttackAcquisitionRange"	"0"
+		"BaseAttackSpeed"		"131"
+		
+		"ProjectileModel"			"particles/units/heroes/hero_snapfire/hero_snapfire_base_attack.vpcf"
+		"ProjectileSpeed" "1800"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"  "100"
+		"AttributeStrengthGain"		"0"
+		"AttributeBaseAgility"		"0"
+		"AttributeAgilityGain"		"0"
+		"AttributeBaseIntelligence"		"0"
+		"AttributeIntelligenceGain"		"0"
+		"MovementSpeed"				"400"
+		"MovementTurnRate"			"0.500000"
+		"VisionDaytimeRange"		"2000"		// Range of vision during day light.
+		"VisionNighttimeRange"		"2000"		// Range of vision at night time.
+
+		"StatusHealth"		"400"
+		"StatusMana" "0"
+		"StatusHealthRegen"		"0"
+
+
+		//cookie gods
+		"DisableWearables"	"1"
+		"ModelScale"	"2"
+		"ArmorPhysical"				"10"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"  "500"
+		"AttackDamageMax"  "1000"
+		"AttackRange" "500"
+		"AttackRate"				"2.00000"
+		"AttackAnimationPoint"		"0.350000"
+		"AttackAcquisitionRange"	"0"
+		"BaseAttackSpeed"		"300"
+		
+		"ProjectileSpeed" "1800"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"  "100"
+		"AttributeStrengthGain"		"0"
+		"AttributeBaseAgility"		"0"
+		"AttributeAgilityGain"		"0"
+		"AttributeBaseIntelligence"		"0"
+		"AttributeIntelligenceGain"		"0"
+		"MovementSpeed"				"400"
+		"MovementTurnRate"			"0.500000"
+		"VisionDaytimeRange"		"2000"		// Range of vision during day light.
+		"VisionNighttimeRange"		"2000"		// Range of vision at night time.
+
+		"StatusHealth"		"5000"
+		"StatusMana" "0"
+		"StatusHealthRegen"		"0"
+
+
+
+		

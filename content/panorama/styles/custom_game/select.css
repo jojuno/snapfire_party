@@ -1,0 +1,272 @@
+.SelectionRoot {
+  horizontal-align: center;
+  vertical-align: center;
+  margin-top: 10px;
+}
+
+.PointsMainPanel {
+  horizontal-align: center;
+  vertical-align: center;
+}
+
+.PointsLabel {
+  font-size: 50px;
+  horizontal-align: center;
+  vertical-align: center;
+}
+
+.PointsSelectRoot {
+  background-color: #1e1f20ff;
+  border: 1px solid #00000088;
+  box-shadow: #00000044 -4px -4px 8px 8px;
+  vertical-align: center;
+  horizontal-align: center;
+  overflow: clip;
+  flow-children: down;
+  border-radius: 5px;
+}
+
+.PointsPanel {
+  margin-right: 20px;
+  margin-left: 20px;
+  flow-children: right;
+  horizontal-align: center;
+}
+
+.PointsPseudoImage {
+  border: 4px;
+  width: 200px;
+  margin: 4px;
+  height: 200px;
+  color: white;
+  font-size: 80px;
+}
+
+.PointsSelectPanel {
+  horizontal-align: center;
+}
+
+#PointsSelectLabel {
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  background-color: #00000088;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+#PointsName {
+  horizontal-align: center;
+  font-size: 30px;
+  padding-top: 4px;
+  color: #ffd700;
+}
+
+.SelectPointsButton {
+  min-width: 280px;
+  height: 54px;
+  padding: 4px 12px 4px 12px;
+  margin: 20px;
+  background-color: #1e5799;
+  border-radius: 3px;
+}
+
+.SelectPointsButton Label {
+  align: center center;
+  text-transform: uppercase;
+  color: #ddd;
+  font-size: 26px;
+}
+
+.SelectPointsButton:hover {
+  background-color: gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(#1e5799),
+    to(#2989d8)
+  );
+}
+
+/* type selection */
+
+.TypeMainPanel {
+  horizontal-align: center;
+  vertical-align: center;
+}
+
+.TypeLabel {
+  font-size: 50px;
+  horizontal-align: center;
+  vertical-align: center;
+}
+
+.TypeSelectRoot {
+  background-color: #1e1f20ff;
+  border: 1px solid #00000088;
+  box-shadow: #00000044 -4px -4px 8px 8px;
+  vertical-align: center;
+  horizontal-align: center;
+  overflow: clip;
+  flow-children: down;
+  border-radius: 5px;
+}
+
+.TypePanel {
+  margin-right: 20px;
+  margin-left: 20px;
+  flow-children: right;
+  horizontal-align: center;
+}
+
+.TypePseudoImage {
+  border: 4px;
+  width: 200px;
+  margin: 4px;
+  height: 200px;
+  color: white;
+  font-size: 80px;
+  horizontal-align: center;
+}
+
+.TypeSelectPanel {
+  horizontal-align: center;
+}
+
+#TypeSelectLabel {
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  background-color: #00000088;
+  text-align: center;
+  font-size: 40px;
+  color: #cccccc;
+}
+
+#TypeName {
+  horizontal-align: center;
+  font-size: 30px;
+  padding-top: 4px;
+  color: #ffd700;
+}
+
+.SelectTypeButton {
+  min-width: 280px;
+  height: 54px;
+  padding: 4px 12px 4px 12px;
+  margin: 20px;
+  background-color: #1e5799;
+  border-radius: 3px;
+}
+
+.SelectTypeButton Label {
+  align: center center;
+  text-transform: uppercase;
+  color: #ddd;
+  font-size: 26px;
+}
+
+.SelectTypeButton:hover {
+  background-color: gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(#1e5799),
+    to(#2989d8)
+  );
+}
+
+/* hero selection */
+
+.HeroMainPanel {
+  horizontal-align: center;
+  vertical-align: center;
+}
+
+.HeroSelectRoot {
+  background-color: #1e1f20ff;
+  border: 1px solid #00000088;
+  box-shadow: #00000044 -4px -4px 8px 8px;
+  vertical-align: center;
+  horizontal-align: center;
+  overflow: clip;
+  flow-children: down;
+  border-radius: 5px;
+}
+
+.HeroPanel {
+  margin-right: 20px;
+  margin-left: 20px;
+  flow-children: right;
+  horizontal-align: center;
+}
+
+.HeroImage {
+  border: 4px;
+}
+
+.AbilityImage {
+  width: 100px;
+  height: 100px;
+}
+
+.AbilityItemPanel {
+  flow-children: right;
+}
+
+.AbilityPanel {
+  margin-right: 20px;
+  margin-left: 20px;
+  flow-children: right;
+  horizontal-align: center;
+}
+
+.HeroSelectPanel {
+  horizontal-align: center;
+}
+
+#HeroSelectLabel {
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  background-color: #00000088;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+#HeroName {
+  horizontal-align: center;
+  font-size: 30px;
+  color: #ffd700;
+}
+
+.SelectHeroButton {
+  min-width: 280px;
+  height: 54px;
+  padding: 4px 12px 4px 12px;
+  margin: 20px;
+  background-color: #1e5799;
+  border-radius: 3px;
+}
+
+.SelectHeroButton Label {
+  align: center center;
+  text-transform: uppercase;
+  color: #ddd;
+  font-size: 26px;
+}
+
+.SelectHeroButton:hover {
+  background-color: gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(#1e5799),
+    to(#2989d8)
+  );
+}

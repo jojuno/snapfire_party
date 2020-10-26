@@ -1,0 +1,6 @@
+dota_create_unit snapfire custom2; dota_create_unit snapfire custom3; dota_create_unit snapfire custom4; dota_create_unit snapfire custom5; dota_create_unit snapfire custom6
+
+
+
+//add multiple snapfires
+dota_create_unit npc_dota_hero_snapfire custom3; dota_create_unit npc_dota_hero_snapfire custom3; dota_create_unit npc_dota_hero_snapfire custom3; dota_create_unit npc_dota_hero_snapfire custom3; dota_create_unit npc_dota_hero_snapfire custom3; dota_create_unit npc_dota_hero_snapfire custom3; dota_create_unit npc_dota_hero_snapfire custom3; dota_create_unit npc_dota_hero_snapfire custom3; dota_create_unit npc_dota_hero_snapfire custom3; dota_create_unit npc_dota_hero_snapfire custom3; dota_create_unit npc_dota_hero_snapfire custom3; 

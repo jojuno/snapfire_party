@@ -1,0 +1,41 @@
+<root>
+
+    <styles>
+        <include src="file://{resources}/styles/custom_game/scoreboard/scoreboard.css" />
+    </styles>
+
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/scoreboard/scoreboard.js" />
+    </scripts>
+
+    <snippets>
+        <snippet name="Score">
+            <Panel class="Score">
+                <Panel id="LeftSide">
+                    <Panel id="ScoreImage">
+                    </Panel>
+                </Panel>
+                <Panel id="RightSide">
+                    <Panel id="TopSide">
+                        <Label id="ScoreTitle" text = "Sample Score Title"/>
+                    </Panel>
+                    <Panel id="BottomSide">
+                        <Panel id="Background" />
+                        <Label id="ScoreDescription" text="Sample Score Desc" />
+                        <Label id="ScoreProgress" text="1"/>
+                    </Panel>
+                </Panel>
+            </Panel>
+        </snippet>
+    </snippets>
+
+    <Panel class="ScoreRoot">
+
+        <Label id="ScoreName" text="Score" />
+
+        <Panel id="Scores">
+        </Panel>
+    </Panel>
+
+
+</root>

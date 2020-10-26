@@ -1,0 +1,28 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/custom_hero_select.css" />
+	</styles>
+    <scripts>
+		<include src="file://{resources}/scripts/custom_game/custom_hero_select.js" />
+	</scripts>
+    <Panel class="MainPanel" hittest="false">
+        <Panel id="HeroSelectRoot" class="HeroSelectRoot" hittest="true" visible="false">
+            <Label id="NinjaSelectLabel" text="#ninja_select" style="" />
+            <Label id="HeroName" style="" />
+            <Panel class="HeroPanel">
+                <DOTAHeroImage id="HeroImage0" class="HeroImage" heroname="npc_dota_hero_chen" heroimagestyle="portrait" onactivate="OnHighlightHero(0)" onmouseover="OnHeroMouseOver(0)" onmouseout="OnHeroMouseOut(0)"/>
+                <DOTAHeroImage id="HeroImage1" class="HeroImage" heroname="npc_dota_hero_mirana" heroimagestyle="portrait" onactivate="OnHighlightHero(1)" onmouseover="OnHeroMouseOver(1)" onmouseout="OnHeroMouseOut(1)"/>
+                <DOTAHeroImage id="HeroImage2" class="HeroImage" heroname="npc_dota_hero_batrider" heroimagestyle="portrait" onactivate="OnHighlightHero(2)" onmouseover="OnHeroMouseOver(2)" onmouseout="OnHeroMouseOut(2)"/>
+                <DOTAHeroImage id="HeroImage3" class="HeroImage" heroname="npc_dota_hero_gyrocopter" heroimagestyle="portrait" onactivate="OnHighlightHero(3)" onmouseover="OnHeroMouseOver(3)" onmouseout="OnHeroMouseOut(3)"/>
+                <DOTAHeroImage id="HeroImage4" class="HeroImage" heroname="npc_dota_hero_luna" heroimagestyle="portrait" onactivate="OnHighlightHero(4)" onmouseover="OnHeroMouseOver(4)" onmouseout="OnHeroMouseOut(4)"/>
+                <DOTAHeroImage id="HeroImage5" class="HeroImage" heroname="npc_dota_hero_disruptor" heroimagestyle="portrait" onactivate="OnHighlightHero(5)" onmouseover="OnHeroMouseOver(5)" onmouseout="OnHeroMouseOut(5)"/>
+                <DOTAHeroImage id="HeroImage6" class="HeroImage" heroname="npc_dota_hero_keeper_of_the_light" heroimagestyle="portrait" onactivate="OnHighlightHero(6)" onmouseover="OnHeroMouseOver(6)" onmouseout="OnHeroMouseOut(6)"/>
+                <DOTAHeroImage id="HeroImage7" class="HeroImage" heroname="npc_dota_hero_snapfire" heroimagestyle="portrait" onactivate="OnHighlightHero(7)" onmouseover="OnHeroMouseOver(7)" onmouseout="OnHeroMouseOut(7)"/>
+            </Panel>
+            <Panel id="HeroSelectPanel" class="HeroSelectPanel">
+                <Button class="SelectHeroButton" onactivate="OnSelectHero()"><Label text="#Select"></Label></Button>
+            </Panel>
+        </Panel>
+
+    </Panel>
+</root>
